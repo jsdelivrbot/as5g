@@ -1,11 +1,11 @@
 ﻿<div id='blog-navbar' class='navbar navbar-primary navbar-fixed-top'>
    <div class='container'>
-      <b:section id='blog-search'
-                 class='blog-search'
-                 maxwidgets='1' showaddelements='no'>
+      <b:section id='blogSearch'
+                 class='blogSearch'
+                 maxwidgets='1' showaddelement='no'>
          <b:widget id='BlogSearch1'
                    locked='true'
-                   title='{{text.searchPlaceholder}}'
+                   title='BlogSearch'
                    type='BlogSearch'
                    visible='true'>
             <b:includable id='main'>
@@ -13,7 +13,7 @@
                <form id='blog-search-form'
                      class='blog-search-form'
                      expr:action='data:blog.searchUrl'>
-                  <input placeholder='{{text.searchPlaceholder}}'
+                  <input placeholder='Tìm kiếm...'
                          autocomplete='off'
                          class='search-input'
                          expr:value='data:view.isSearch ? data:view.search.query.escaped : &quot;&quot;'
