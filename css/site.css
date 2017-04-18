@@ -51,7 +51,7 @@ body
     margin: 0;
     padding: 0 54px;
 }
-#blog-navbar > .container > .logo,
+#blog-navbar > .container > .main-logo,
 #blog-navbar > .container > .grid-button
 {
     position: absolute;
@@ -59,7 +59,7 @@ body
 
     padding: 0;
 }
-#blog-navbar > .container > .logo > img,
+#blog-navbar > .container > .main-logo > img,
 #blog-navbar > .container > .grid-button > img
 {
     width: 54px;
