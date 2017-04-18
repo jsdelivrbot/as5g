@@ -51,16 +51,16 @@ body
     margin: 0;
     padding: 0 54px;
 }
-#blog-navbar > .container .logo,
-#blog-navbar > .container .grid-button
+#blog-navbar > .container > .logo,
+#blog-navbar > .container > .grid-button
 {
     position: absolute;
     top: 0;
 
     padding: 0;
 }
-#blog-navbar > .container .logo > img,
-#blog-navbar > .container .grid-button > img
+#blog-navbar > .container > .logo > img,
+#blog-navbar > .container > .grid-button > img
 {
     width: 54px;
     height: 54px;
