@@ -1,0 +1,53 @@
+/*blog-navbar*/
+@font-face
+{
+    font-family: 'SVN-Servetica-Medium';
+    font-weight: 500;
+    font-style: normal;
+
+    src: url('https://cdn.rawgit.com/CannedMummy/cannedmummy.blogspot.com/release/fonts/SVN-Servetica-Medium.eot');
+    src: local('SVN-Servetica-Medium'), /*local*/ url('https://cdn.rawgit.com/CannedMummy/cannedmummy.blogspot.com/release/fonts/SVN-Servetica-Medium.eot?#iefix') format('embedded-opentype'), /*embedded-opentype*/ url('https://cdn.rawgit.com/CannedMummy/cannedmummy.blogspot.com/release/fonts/SVN-Servetica-Medium.woff2') format('woff2'), /*woff2*/ url('https://cdn.rawgit.com/CannedMummy/cannedmummy.blogspot.com/release/fonts/SVN-Servetica-Medium.woff') format('woff'), /*woff*/ url('https://cdn.rawgit.com/CannedMummy/cannedmummy.blogspot.com/release/fonts/SVN-Servetica-Medium.ttf') format('truetype'), /*truetype*/ url('https://cdn.rawgit.com/CannedMummy/cannedmummy.blogspot.com/release/fonts/SVN-Servetica-Medium.svg#SVN-Servetica-Medium') format('svg');
+    /*svg*/
+}
+@font-face
+{
+    font-family: 'Stiff-Staff-Heavy';
+    font-weight: 900;
+    font-style: normal;
+
+    src: url('https://cdn.rawgit.com/CannedMummy/cannedmummy.blogspot.com/release/Stiff-Staff-Heavy.eot');
+    src: local('Stiff-Staff-Heavy'), /*local*/ url('https://cdn.rawgit.com/CannedMummy/cannedmummy.blogspot.com/release/fonts/Stiff-Staff-Heavy.eot?#iefix') format('embedded-opentype'), /*embedded-opentype*/ url('https://cdn.rawgit.com/CannedMummy/cannedmummy.blogspot.com/release/fonts/Stiff-Staff-Heavy.woff2') format('woff2'), /*woff2*/ url('https://cdn.rawgit.com/CannedMummy/cannedmummy.blogspot.com/release/fonts/Stiff-Staff-Heavy.woff') format('woff'), /*woff*/ url('https://cdn.rawgit.com/CannedMummy/cannedmummy.blogspot.com/release/fonts/Stiff-Staff-Heavy.ttf') format('truetype'), /*truetype*/ url('https://cdn.rawgit.com/CannedMummy/cannedmummy.blogspot.com/release/fonts/Stiff-Staff-Heavy.svg#Stiff-Staff-Heavy') format('svg');
+    /*svg*/
+}
+html,
+body
+{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 18px;
+    line-height: 1.25;
+
+    min-width: 360px;
+
+    color: #333;
+    background-color: #fff;
+}
+#blog-navbar
+{
+    height: 72px;
+    padding: 9px 0;
+
+    border: none;
+    border-bottom: solid 1px #ebebeb;
+    background-color: rgba(255, 255, 255, .75);
+}
+#blog-navbar > .container
+{
+    position: relative;
+}
+#blog-navbar > .container > .blog-search .blog-search-form
+{
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0 54px;
+}

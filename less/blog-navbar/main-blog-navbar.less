@@ -1,0 +1,28 @@
+﻿@import '../colors.less';
+@import '../data.less';
+
+#blog-navbar
+{
+    height: @blog-navbar-height;
+    padding: (@blog-navbar-height - @blog-navbar-container-height) / 2 0;
+
+    border: none;
+    border-bottom: solid 1px @lightgrey;
+    background-color: fade(@white, 75%);
+
+    > .container
+    {
+        position: relative;
+
+        > .blog-search
+        {
+            .blog-search-form
+            {
+                width: 100%;
+                height: 100%;
+                margin: 0;
+                padding: 0 @blog-navbar-container-height;
+            }
+        }
+    }
+}

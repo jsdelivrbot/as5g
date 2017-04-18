@@ -1,0 +1,38 @@
+﻿<div id='blog-navbar' class='navbar navbar-primary navbar-fixed-top'>
+   <div class='container'>
+      <b:section id='blog-search'
+                 class='blog-search'
+                 maxwidgets='1' showaddelements='no'>
+         <b:widget id='BlogSearch1'
+                   locked='true'
+                   title='{{text.searchPlaceholder}}'
+                   type='BlogSearch'
+                   visible='true'>
+            <b:includable id='main'>
+               <!-- form search -->
+               <form id='blog-search-form'
+                     class='blog-search-form'
+                     expr:action='data:blog.searchUrl'>
+                  <input placeholder='{{text.searchPlaceholder}}'
+                         autocomplete='off'
+                         class='search-input'
+                         expr:value='data:view.isSearch ? data:view.search.query.escaped : &quot;&quot;'
+                         name='q' size='10' title='search' type='text' />
+
+                  <button class='search-button' type='submit'>
+                     <i class='fa fa-search'></i>
+                  </button>
+               </form>
+            </b:includable>
+         </b:widget>
+      </b:section>
+
+      <a class='logo' expr:href='data:blog.homepageUrl'>
+         <img src='{{url.file}}/img/logo/blogger/logo.svg' />
+      </a>
+
+      <a class='grid-button' href='javascript:void(0)'>
+         <img src='{{url.file}}/img/others/grid-button.svg' />
+      </a>
+   </div>
+</div>
