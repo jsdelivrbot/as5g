@@ -1,4 +1,6 @@
 ﻿{
-  "homepage": "data:blog.homepageUrl",
-  "file": ".."
+   "homepage": "data:blog.homepageUrl",
+   "file": "https://rawgit.com/k7ae95/as5g/d001",
+   "site_min_css": "https://dl.dropbox.com/s/8rpofm6nct1r9lo/site.min.css",
+   "site_min_js": "https://dl.dropbox.com/s/eqtvniuk7efxtot/site.min.js"
 }

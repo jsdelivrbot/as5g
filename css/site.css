@@ -5,8 +5,8 @@
     font-weight: 500;
     font-style: normal;
 
-    src: url('https://cdn.rawgit.com/CannedMummy/cannedmummy.blogspot.com/release/fonts/SVN-Servetica-Medium.eot');
-    src: local('SVN-Servetica-Medium'), /*local*/ url('https://cdn.rawgit.com/CannedMummy/cannedmummy.blogspot.com/release/fonts/SVN-Servetica-Medium.eot?#iefix') format('embedded-opentype'), /*embedded-opentype*/ url('https://cdn.rawgit.com/CannedMummy/cannedmummy.blogspot.com/release/fonts/SVN-Servetica-Medium.woff2') format('woff2'), /*woff2*/ url('https://cdn.rawgit.com/CannedMummy/cannedmummy.blogspot.com/release/fonts/SVN-Servetica-Medium.woff') format('woff'), /*woff*/ url('https://cdn.rawgit.com/CannedMummy/cannedmummy.blogspot.com/release/fonts/SVN-Servetica-Medium.ttf') format('truetype'), /*truetype*/ url('https://cdn.rawgit.com/CannedMummy/cannedmummy.blogspot.com/release/fonts/SVN-Servetica-Medium.svg#SVN-Servetica-Medium') format('svg');
+    src: url('https://rawgit.com/k7ae95/as5g/d001/fonts/SVN-Servetica-Medium.eot');
+    src: local('SVN-Servetica-Medium'), /*local*/ url('https://rawgit.com/k7ae95/as5g/d001/fonts/SVN-Servetica-Medium.eot?#iefix') format('embedded-opentype'), /*embedded-opentype*/ url('https://rawgit.com/k7ae95/as5g/d001/fonts/SVN-Servetica-Medium.woff2') format('woff2'), /*woff2*/ url('https://rawgit.com/k7ae95/as5g/d001/fonts/SVN-Servetica-Medium.woff') format('woff'), /*woff*/ url('https://rawgit.com/k7ae95/as5g/d001/fonts/SVN-Servetica-Medium.ttf') format('truetype'), /*truetype*/ url('https://rawgit.com/k7ae95/as5g/d001/fonts/SVN-Servetica-Medium.svg#SVN-Servetica-Medium') format('svg');
     /*svg*/
 }
 @font-face
@@ -15,8 +15,8 @@
     font-weight: 900;
     font-style: normal;
 
-    src: url('https://cdn.rawgit.com/CannedMummy/cannedmummy.blogspot.com/release/Stiff-Staff-Heavy.eot');
-    src: local('Stiff-Staff-Heavy'), /*local*/ url('https://cdn.rawgit.com/CannedMummy/cannedmummy.blogspot.com/release/fonts/Stiff-Staff-Heavy.eot?#iefix') format('embedded-opentype'), /*embedded-opentype*/ url('https://cdn.rawgit.com/CannedMummy/cannedmummy.blogspot.com/release/fonts/Stiff-Staff-Heavy.woff2') format('woff2'), /*woff2*/ url('https://cdn.rawgit.com/CannedMummy/cannedmummy.blogspot.com/release/fonts/Stiff-Staff-Heavy.woff') format('woff'), /*woff*/ url('https://cdn.rawgit.com/CannedMummy/cannedmummy.blogspot.com/release/fonts/Stiff-Staff-Heavy.ttf') format('truetype'), /*truetype*/ url('https://cdn.rawgit.com/CannedMummy/cannedmummy.blogspot.com/release/fonts/Stiff-Staff-Heavy.svg#Stiff-Staff-Heavy') format('svg');
+    src: url('https://rawgit.com/k7ae95/as5g/d001/Stiff-Staff-Heavy.eot');
+    src: local('Stiff-Staff-Heavy'), /*local*/ url('https://rawgit.com/k7ae95/as5g/d001/fonts/Stiff-Staff-Heavy.eot?#iefix') format('embedded-opentype'), /*embedded-opentype*/ url('https://rawgit.com/k7ae95/as5g/d001/fonts/Stiff-Staff-Heavy.woff2') format('woff2'), /*woff2*/ url('https://rawgit.com/k7ae95/as5g/d001/fonts/Stiff-Staff-Heavy.woff') format('woff'), /*woff*/ url('https://rawgit.com/k7ae95/as5g/d001/fonts/Stiff-Staff-Heavy.ttf') format('truetype'), /*truetype*/ url('https://rawgit.com/k7ae95/as5g/d001/fonts/Stiff-Staff-Heavy.svg#Stiff-Staff-Heavy') format('svg');
     /*svg*/
 }
 html,
@@ -33,7 +33,7 @@ body
 }
 #blog-navbar
 {
-    height: 72px;
+    height: 73px;
     padding: 9px 0;
 
     border: none;
@@ -50,4 +50,26 @@ body
     height: 100%;
     margin: 0;
     padding: 0 54px;
+}
+#blog-navbar > .container .logo,
+#blog-navbar > .container .grid-button
+{
+    position: absolute;
+    top: 0;
+
+    padding: 0;
+}
+#blog-navbar > .container .logo > img,
+#blog-navbar > .container .grid-button > img
+{
+    width: 54px;
+    height: 54px;
+}
+#blog-navbar > .container > .main-logo
+{
+    left: 15px;
+}
+#blog-navbar > .container > .grid-button
+{
+    right: 15px;
 }

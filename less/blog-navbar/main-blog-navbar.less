@@ -1,9 +1,9 @@
-﻿@import '../colors.less';
+@import '../colors.less';
 @import '../data.less';
 
 #blog-navbar
 {
-    height: @blog-navbar-height;
+    height: @blog-navbar-height + 1;
     padding: (@blog-navbar-height - @blog-navbar-container-height) / 2 0;
 
     border: none;
@@ -23,6 +23,31 @@
                 margin: 0;
                 padding: 0 @blog-navbar-container-height;
             }
+        }
+
+        .logo,
+        .grid-button
+        {
+            position: absolute;
+            top: 0;
+
+            padding: 0;
+
+            > img
+            {
+                width: @blog-navbar-container-height;
+                height: @blog-navbar-container-height;
+            }
+        }
+
+        > .main-logo
+        {
+            left: 15px;
+        }
+
+        > .grid-button
+        {
+            right: 15px;
         }
     }
 }
