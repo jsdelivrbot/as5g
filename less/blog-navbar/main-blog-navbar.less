@@ -32,7 +32,7 @@
                 width: 100%;
                 max-width: @search-form-max-width;
                 height: 100%;
-                padding-right: @search-input-height;
+                padding-right: @search-input-height + 8;
 
                 .search-input
                 {
@@ -41,28 +41,38 @@
                     margin: (@blog-navbar-container-height - @search-input-height) / 2 auto;
                     padding: (@blog-navbar-container-height - @search-input-height) / 2;
 
-                    border: none;
-                    outline: 2px solid fade(@black, 25%);
+                    border: 2px solid fade(@black, 25%);
+                    outline: none;
 
                     &:focus
                     {
-                        outline-color: @black;
+                        border-color: @black;
                     }
                 }
 
                 .search-button
                 {
+                    line-height: @search-input-height;
+
                     position: absolute;
                     top: 0;
                     right: 0;
 
+                    display: block;
+
                     width: @search-input-height;
                     height: @search-input-height;
                     margin: (@blog-navbar-container-height - @search-input-height) / 2 auto;
+                    padding: 0;
 
                     color: @white;
                     border: none;
                     background: @black;
+
+                    &:hover
+                    {
+                        cursor: pointer;
+                    }
                 }
             }
         }

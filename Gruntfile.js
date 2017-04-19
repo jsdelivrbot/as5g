@@ -54,6 +54,12 @@ module.exports = function (grunt) {
                {
                   expand: true,
                   flatten: true,
+                  src: ['less/blog-section-1/*.less'],
+                  dest: 'less/blog-section-1/'
+               },
+               {
+                  expand: true,
+                  flatten: true,
                   src: ['css/site.css'],
                   dest: 'css/'
                }
@@ -77,6 +83,12 @@ module.exports = function (grunt) {
                flatten: true,
                src: ['less/blog-navbar/*.less'],
                dest: 'less/blog-navbar/'
+            },
+            {
+               expand: true,
+               flatten: true,
+               src: ['less/blog-section-1/*.less'],
+               dest: 'less/blog-section-1/'
             }]
          },
 

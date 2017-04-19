@@ -61,55 +61,68 @@
 </head>
 
 <body id="page-body">
-   <div id='blog-navbar' class='navbar navbar-primary navbar-fixed-top'>
-      <div class='container'>
-         <b:section id='blogSearch'
-                    class='blogSearch'
-                    maxwidgets='1' showaddelement='no'>
-            <b:widget id='BlogSearch1'
-                      locked='true'
-                      title='BlogSearch'
-                      type='BlogSearch'
-                      visible='true'>
-               <b:includable id='main'>
+   <div id="blog-navbar" class="navbar navbar-primary navbar-fixed-top">
+      <div class="container">
+         <b:section id="blog-search" class="blog-search"
+                    maxwidgets="1" showaddelement="no">
+            <b:widget id="BlogSearch1"
+                      locked="true"
+                      title="BlogSearch"
+                      type="BlogSearch"
+                      visible="true">
+               <b:includable id="main">
                   <!-- form search -->
-                  <form id='blog-search-form'
-                        class='blog-search-form'
-                        expr:action='data:blog.searchUrl'>
-                     <input placeholder='Tìm kiếm...'
-                            autocomplete='off'
-                            class='search-input'
-                            expr:value='data:view.isSearch ? data:view.search.query.escaped : &quot;&quot;'
-                            name='q' size='10' title='search' type='text' />
+                  <form id="blog-search-form"
+                        class="blog-search-form"
+                        expr:action="data:blog.searchUrl">
+                     <input placeholder="Tìm kiếm..."
+                            autocomplete="off"
+                            class="search-input"
+                            expr:value="data:view.isSearch ? data:view.search.query.escaped : &quot;&quot;"
+                            name="q" size="10" title="search" type="text" />
    
-                     <button class='search-button' type='submit'>
-                        <i class='fa fa-search'></i>
+                     <button class="search-button" type="submit">
+                        <i class="fa fa-search"></i>
                      </button>
                   </form>
                </b:includable>
             </b:widget>
          </b:section>
    
-         <a class='main-logo' expr:href='data:blog.homepageUrl'>
-            <img src='https://rawgit.com/k7ae95/as5g/d001/img/logo/blogger/logo.svg' />
+         <a class="main-logo" expr:href="data:blog.homepageUrl">
+            <img src="https://rawgit.com/k7ae95/as5g/d001/img/logo/blogger/logo.svg" />
          </a>
    
-         <a class='grid-button' href='javascript:void(0)'>
-            <img src='https://rawgit.com/k7ae95/as5g/d001/img/other/grid-button.svg' />
+         <a class="grid-button" href="javascript:void(0)">
+            <img src="https://rawgit.com/k7ae95/as5g/d001/img/other/grid-button.svg" />
          </a>
       </div>
    </div>
 
-   <!--<div id='blog'>
-   <b:section id='blog-content' class='blog-content'
-              maxwidgets='1' showaddelements='no'>
-      <b:widget id='Blog1'
-                locked='true'
-                title='' 
-                type='Blog'
-                visible='true'>
-      </b:widget>
-   </b:section>
-</div>-->
+   <div id="blog-section-1" class="blog-section-1">
+      <div class="container">
+      </div>
+   
+      <div class="arrow">
+         <svg class="arrow-1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 2560 36">
+            <defs>
+               <style>
+                  .cls-1 {
+                     fill: #fff;
+                  }
+               </style>
+            </defs>
+            <title>arrow-1</title>
+            <path class="cls-1" d="M1244 0h-1244v36h1280zm72 0h1244v36h-1280z" />
+         </svg>
+      </div>
+   </div>
+
+
+   <div id="blog-ads-1" class="blog-ads-1">
+      <div class="container">
+         <b:section id="blog-ads" class="blog-ads" maxwidgets="" showaddelement="yes"></b:section>
+      </div>
+   </div>
 </body>
 </html>
