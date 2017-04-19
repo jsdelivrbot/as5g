@@ -118,6 +118,56 @@
       </div>
    </div>
 
+   <b:section id="blog" class="blog"
+              maxwidgets="1" showaddelements="no">
+      <b:widget id="Blog1" locked="true"
+                title="" type="Blog" visible="true">
+         <b:includable id="main">
+            <b:if cond='data:blog.pageType == "index"'>
+               <div class="blog-index">
+                  <div class="container">
+                     <div class="title">
+                        <span class="post">Bài đăng</span> trên <span class="blog">Blog</span>
+                     </div>
+   
+                     <b:if cond="data:navMessage">
+                        <div class="nav-message">
+                           <img src="https://rawgit.com/k7ae95/as5g/d001/img/other/monster-1.svg" />
+   
+                           <div class="content">
+                              Kết quả tìm kiếm
+                           </div>
+                        </div>
+                     </b:if>
+   
+                     <b:loop values="data:posts" var="post">
+                     </b:loop>
+   
+                     <b:include name="blog-nextprev" />
+                  </div>
+               </div>
+            </b:if>
+         </b:includable>
+   
+         <b:includable id="blog-nextprev">
+             <div class="blog-nextprev">
+                 <!--prev-->
+                 <b:if cond="data:newerPageUrl">
+                     <a class="blog-prev" expr:href="data:newerPageUrl">
+                         Mới hơn
+                     </a>
+                 </b:if>
+         
+                 <!--next-->
+                 <b:if cond="data:olderPageUrl">
+                     <a class="blog-next" expr:href="data:olderPageUrl">
+                         Cũ hơn
+                     </a>
+                 </b:if>
+             </div>
+         </b:includable>
+      </b:widget>
+   </b:section>
 
    <div id="blog-ads-1" class="blog-ads-1">
       <div class="container">

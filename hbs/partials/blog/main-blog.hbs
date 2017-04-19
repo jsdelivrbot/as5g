@@ -1,1 +1,34 @@
-﻿
+﻿<b:section id="blog" class="blog"
+           maxwidgets="1" showaddelements="no">
+   <b:widget id="Blog1" locked="true"
+             title="{{text.blogTitle}}" type="Blog" visible="true">
+      <b:includable id="main">
+         <b:if cond='data:blog.pageType == "index"'>
+            <div class="blog-index">
+               <div class="container">
+                  <div class="title">
+                     <span class="post">Bài đăng</span> trên <span class="blog">Blog</span>
+                  </div>
+
+                  <b:if cond="data:navMessage">
+                     <div class="nav-message">
+                        <img src="{{url.file}}/img/other/monster-1.svg" />
+
+                        <div class="content">
+                           {{text.blogSearchMessage}}
+                        </div>
+                     </div>
+                  </b:if>
+
+                  <b:loop values="data:posts" var="post">
+                  </b:loop>
+
+                  <b:include name="blog-nextprev" />
+               </div>
+            </div>
+         </b:if>
+      </b:includable>
+
+      {{> blog-nextprev}}
+   </b:widget>
+</b:section>

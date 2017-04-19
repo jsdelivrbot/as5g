@@ -1,0 +1,30 @@
+@import '../colors.less';
+@import '../data.less';
+
+.blog-nextprev
+{
+    display: table;
+
+    margin: @default-font-size * 2 auto;
+
+    > .blog-next,
+    > .blog-prev
+    {
+        display: table-cell;
+
+        width: @blog-nextprev-width;
+        margin: @default-font-size / 2;
+        padding: @default-font-size / 2;
+
+        color: @black;
+        border: 2px solid @black;
+
+        &:hover
+        {
+            text-decoration: none;
+
+            color: @white;
+            background-color: @black;
+        }
+    }
+}

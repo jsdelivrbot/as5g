@@ -1,6 +1,7 @@
 /*body*/
 /*blog-navbar*/
 /*blog-section-1*/
+/*blog*/
 @font-face
 {
     font-family: 'SVN-Servetica-Medium';
@@ -158,4 +159,30 @@ body
         -ms-transform: translateX(-50%);
          -o-transform: translateX(-50%);
             transform: translateX(-50%);
+}
+#blog-nextprev .blog-nextprev
+{
+    display: table;
+
+    margin: 36px auto;
+}
+#blog-nextprev .blog-nextprev > .blog-next,
+#blog-nextprev .blog-nextprev > .blog-prev
+{
+    display: table-cell;
+
+    width: 128px;
+    margin: 9px;
+    padding: 9px;
+
+    color: #333;
+    border: 2px solid #333;
+}
+#blog-nextprev .blog-nextprev > .blog-next:hover,
+#blog-nextprev .blog-nextprev > .blog-prev:hover
+{
+    text-decoration: none;
+
+    color: #fff;
+    background-color: #333;
 }
