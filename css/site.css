@@ -5,7 +5,7 @@
 @font-face
 {
     font-family: 'SVN-Servetica-Medium';
-    font-weight: 500;
+    font-weight: bold;
     font-style: normal;
 
     src: url('https://rawgit.com/k7ae95/as5g/d001/fonts/SVN-Servetica-Medium.eot');
@@ -15,11 +15,21 @@
 @font-face
 {
     font-family: 'Stiff-Staff-Heavy';
-    font-weight: 900;
+    font-weight: bolder;
     font-style: normal;
 
     src: url('https://rawgit.com/k7ae95/as5g/d001/Stiff-Staff-Heavy.eot');
     src: local('Stiff-Staff-Heavy'), /*local*/ url('https://rawgit.com/k7ae95/as5g/d001/fonts/Stiff-Staff-Heavy.eot?#iefix') format('embedded-opentype'), /*embedded-opentype*/ url('https://rawgit.com/k7ae95/as5g/d001/fonts/Stiff-Staff-Heavy.woff2') format('woff2'), /*woff2*/ url('https://rawgit.com/k7ae95/as5g/d001/fonts/Stiff-Staff-Heavy.woff') format('woff'), /*woff*/ url('https://rawgit.com/k7ae95/as5g/d001/fonts/Stiff-Staff-Heavy.ttf') format('truetype'), /*truetype*/ url('https://rawgit.com/k7ae95/as5g/d001/fonts/Stiff-Staff-Heavy.svg#Stiff-Staff-Heavy') format('svg');
+    /*svg*/
+}
+@font-face
+{
+    font-family: 'Quicksand-Regular';
+    font-weight: normal;
+    font-style: normal;
+
+    src: url('Quicksand-Regular.eot');
+    src: local('Quicksand-Regular'), /*local*/ url('Quicksand-Regular.eot?#iefix') format('embedded-opentype'), /*embedded-opentype*/ url('Quicksand-Regular.woff2') format('woff2'), /*woff2*/ url('Quicksand-Regular.woff') format('woff'), /*woff*/ url('Quicksand-Regular.ttf') format('truetype'), /*truetype*/ url('Quicksand-Regular.svg#Quicksand-Regular') format('svg');
     /*svg*/
 }
 html,
