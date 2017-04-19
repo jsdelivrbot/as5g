@@ -124,7 +124,7 @@
                 title="" type="Blog" visible="true">
          <b:includable id="main">
             <b:if cond='data:blog.pageType == "index"'>
-               <div class="blog-index">
+               <div id="blog-index" class="blog-index">
                   <div class="container">
                      <div class="title">
                         <span class="post">Bài đăng</span> trên <span class="blog">Blog</span>
@@ -141,10 +141,20 @@
                      </b:if>
    
                      <b:loop values="data:posts" var="post">
+                        <!--<b:include name="blog-post-index" data="data:post" />-->
                      </b:loop>
    
                      <b:include name="blog-nextprev" />
                   </div>
+               </div>
+   
+               <b:else />
+               <div class="blog-post">
+                  <!--<b:loop values="data:posts" var="post">
+                     <b:include name="blog-post" data="data:post" />
+   
+                     <b:include name="blog-comments" data="data:post" />
+                  </b:loop>-->
                </div>
             </b:if>
          </b:includable>
@@ -153,14 +163,14 @@
              <div class="blog-nextprev">
                  <!--prev-->
                  <b:if cond="data:newerPageUrl">
-                     <a class="blog-prev" expr:href="data:newerPageUrl">
+                     <a id="blog-prev" class="blog-prev" expr:href="data:newerPageUrl">
                          Mới hơn
                      </a>
                  </b:if>
          
                  <!--next-->
                  <b:if cond="data:olderPageUrl">
-                     <a class="blog-next" expr:href="data:olderPageUrl">
+                     <a id="blog-next" class="blog-next" expr:href="data:olderPageUrl">
                          Cũ hơn
                      </a>
                  </b:if>

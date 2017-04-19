@@ -7,14 +7,19 @@
 
     margin: @default-font-size * 2 auto;
 
+    border-spacing: @default-font-size/2;
+    border-collapse: separate;
+
+
     > .blog-next,
     > .blog-prev
     {
         display: table-cell;
 
         width: @blog-nextprev-width;
-        margin: @default-font-size / 2;
-        padding: @default-font-size / 2;
+        padding: @default-font-size / 4;
+
+        text-align: center;
 
         color: @black;
         border: 2px solid @black;
