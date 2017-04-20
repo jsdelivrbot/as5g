@@ -35,7 +35,7 @@
 html,
 body
 {
-    font-family: Quicksand-Regular, 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     font-size: 18px;
     line-height: 1.25;
 
@@ -43,6 +43,9 @@ body
 
     color: #333;
     background-color: #fff;
+
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
 }
 #blog-navbar
 {
@@ -176,7 +179,8 @@ body
 }
 #blog .blog-index > .container > .title
 {
-    font-size: 36px;
+    font-family: Quicksand-Regular, Arial, sans-serif;
+    font-size: 27px;
 
     text-align: center;
 }
@@ -188,9 +192,31 @@ body
 #blog .blog-index > .container > .title > .blog
 {
     font-size: 54px;
-    font-weight: bold;
+    font-weight: bolder;
 
     color: #f2711c;
+}
+#blog .blog-index > .container > .nav-message
+{
+    position: relative;
+
+    height: 128px;
+    margin: 18px auto;
+
+    text-align: center;
+}
+#blog .blog-index > .container > .nav-message > img
+{
+    display: inline-block;
+
+    height: 128px;
+}
+#blog .blog-index > .container > .nav-message > .content
+{
+    font-size: 27px;
+    font-weight: bold;
+
+    display: inline-block;
 }
 #blog .blog-nextprev
 {

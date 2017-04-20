@@ -21,7 +21,7 @@
                   </b:if>
 
                   <b:loop values="data:posts" var="post">
-                     <!--<b:include name="blog-post-index" data="data:post" />-->
+                     <b:include name="blog-index-post" data="data:post" />
                   </b:loop>
 
                   <b:include name="blog-nextprev" />
@@ -38,6 +38,8 @@
             </div>
          </b:if>
       </b:includable>
+
+      {{> blog-index-post}}
 
       {{> blog-nextprev}}
    </b:widget>
