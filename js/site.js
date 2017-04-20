@@ -1,12 +1,12 @@
 ﻿var thumbnail = [
-   'https://rawgit.com/k7ae95/as5g/d001/img/thumbnail/empty/1.svg',
-   'https://rawgit.com/k7ae95/as5g/d001/img/thumbnail/empty/2.svg',
-   'https://rawgit.com/k7ae95/as5g/d001/img/thumbnail/empty/3.svg',
-   'https://rawgit.com/k7ae95/as5g/d001/img/thumbnail/empty/4.svg',
-   'https://rawgit.com/k7ae95/as5g/d001/img/thumbnail/empty/5.svg',
-   'https://rawgit.com/k7ae95/as5g/d001/img/thumbnail/empty/6.svg',
-   'https://rawgit.com/k7ae95/as5g/d001/img/thumbnail/empty/7.svg',
-   'https://rawgit.com/k7ae95/as5g/d001/img/thumbnail/empty/8.svg'
+   'https://cdn.rawgit.com/k7ae95/as5g/r001/img/thumbnail/empty/1.svg',
+   'https://cdn.rawgit.com/k7ae95/as5g/r001/img/thumbnail/empty/2.svg',
+   'https://cdn.rawgit.com/k7ae95/as5g/r001/img/thumbnail/empty/3.svg',
+   'https://cdn.rawgit.com/k7ae95/as5g/r001/img/thumbnail/empty/4.svg',
+   'https://cdn.rawgit.com/k7ae95/as5g/r001/img/thumbnail/empty/5.svg',
+   'https://cdn.rawgit.com/k7ae95/as5g/r001/img/thumbnail/empty/6.svg',
+   'https://cdn.rawgit.com/k7ae95/as5g/r001/img/thumbnail/empty/7.svg',
+   'https://cdn.rawgit.com/k7ae95/as5g/r001/img/thumbnail/empty/8.svg'
 ];
 
 var month = [
