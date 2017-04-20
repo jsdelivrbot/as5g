@@ -5,21 +5,11 @@
 @font-face
 {
     font-family: 'SVN-Servetica-Medium';
-    font-weight: bold;
+    font-weight: normal;
     font-style: normal;
 
     src: url('https://rawgit.com/k7ae95/as5g/d001/fonts/SVN-Servetica-Medium.eot');
     src: local('SVN-Servetica-Medium'), /*local*/ url('https://rawgit.com/k7ae95/as5g/d001/fonts/SVN-Servetica-Medium.eot?#iefix') format('embedded-opentype'), /*embedded-opentype*/ url('https://rawgit.com/k7ae95/as5g/d001/fonts/SVN-Servetica-Medium.woff2') format('woff2'), /*woff2*/ url('https://rawgit.com/k7ae95/as5g/d001/fonts/SVN-Servetica-Medium.woff') format('woff'), /*woff*/ url('https://rawgit.com/k7ae95/as5g/d001/fonts/SVN-Servetica-Medium.ttf') format('truetype'), /*truetype*/ url('https://rawgit.com/k7ae95/as5g/d001/fonts/SVN-Servetica-Medium.svg#SVN-Servetica-Medium') format('svg');
-    /*svg*/
-}
-@font-face
-{
-    font-family: 'Stiff-Staff-Heavy';
-    font-weight: bolder;
-    font-style: normal;
-
-    src: url('https://rawgit.com/k7ae95/as5g/d001/Stiff-Staff-Heavy.eot');
-    src: local('Stiff-Staff-Heavy'), /*local*/ url('https://rawgit.com/k7ae95/as5g/d001/fonts/Stiff-Staff-Heavy.eot?#iefix') format('embedded-opentype'), /*embedded-opentype*/ url('https://rawgit.com/k7ae95/as5g/d001/fonts/Stiff-Staff-Heavy.woff2') format('woff2'), /*woff2*/ url('https://rawgit.com/k7ae95/as5g/d001/fonts/Stiff-Staff-Heavy.woff') format('woff'), /*woff*/ url('https://rawgit.com/k7ae95/as5g/d001/fonts/Stiff-Staff-Heavy.ttf') format('truetype'), /*truetype*/ url('https://rawgit.com/k7ae95/as5g/d001/fonts/Stiff-Staff-Heavy.svg#Stiff-Staff-Heavy') format('svg');
     /*svg*/
 }
 @font-face
@@ -177,6 +167,207 @@ body
 {
     text-align: justify;
 }
+#blog .blog-index > .container > .blog-index-post
+{
+    position: relative;
+
+    width: 100%;
+    height: 360px;
+    margin: 54px auto;
+}
+#blog .blog-index > .container > .blog-index-post:nth-of-type(odd) > .wrapper
+{
+    margin-left: -30px;
+}
+@media (min-width: 992px)
+{
+    #blog .blog-index > .container > .blog-index-post:nth-of-type(odd) > .wrapper > .content
+    {
+        padding-right: 330px;
+    }
+}
+@media (min-width: 640px)
+{
+    #blog .blog-index > .container > .blog-index-post:nth-of-type(odd) > .thumbnail
+    {
+        right: 0;
+    }
+}
+#blog .blog-index > .container > .blog-index-post:nth-of-type(even) > .wrapper
+{
+    margin-left: 30px;
+}
+@media (min-width: 992px)
+{
+    #blog .blog-index > .container > .blog-index-post:nth-of-type(even) > .wrapper > .timestamp
+    {
+        left: 330px;
+    }
+    #blog .blog-index > .container > .blog-index-post:nth-of-type(even) > .wrapper > .content
+    {
+        left: 447px;
+    }
+}
+@media (min-width: 640px)
+{
+    #blog .blog-index > .container > .blog-index-post:nth-of-type(even) > .thumbnail
+    {
+        left: 0;
+    }
+}
+#blog .blog-index > .container > .blog-index-post > .thumbnail
+{
+    position: absolute;
+    top: 0;
+    left: 50%;
+
+    width: 360px;
+    height: 360px;
+    margin-bottom: 0;
+    padding: 0;
+
+    -webkit-transform: translateX(-50%);
+        -ms-transform: translateX(-50%);
+         -o-transform: translateX(-50%);
+            transform: translateX(-50%);
+
+    border: none;
+    border-radius: 0;
+    background-color: #fff;
+    background-repeat: no-repeat;
+    background-position: center;
+    -webkit-background-size: auto 100%;
+            background-size: auto 100%;
+    -webkit-box-shadow: 0 0 27px rgba(0, 0, 0, .25);
+            box-shadow: 0 0 27px rgba(0, 0, 0, .25);
+}
+@media (min-width: 640px)
+{
+    #blog .blog-index > .container > .blog-index-post > .thumbnail
+    {
+        left: auto;
+
+        -webkit-transform: none;
+            -ms-transform: none;
+             -o-transform: none;
+                transform: none;
+    }
+}
+@media (min-width: 992px)
+{
+    #blog .blog-index > .container > .blog-index-post > .thumbnail
+    {
+        z-index: auto;
+        left: auto;
+    }
+}
+#blog .blog-index > .container > .blog-index-post > .wrapper
+{
+    position: absolute;
+    z-index: 2;
+    top: 50%;
+    left: 0;
+
+    width: 100%;
+    height: 360px;
+
+    -webkit-transition: all linear .25s;
+         -o-transition: all linear .25s;
+            transition: all linear .25s;
+    -webkit-transform: translateY(-50%);
+        -ms-transform: translateY(-50%);
+         -o-transform: translateY(-50%);
+            transform: translateY(-50%);
+
+    background-color: rgba(255, 255, 255, .75);
+    -webkit-box-shadow: 0 0 1.5rem rgba(0, 0, 0, .15);
+            box-shadow: 0 0 1.5rem rgba(0, 0, 0, .15);
+}
+#blog .blog-index > .container > .blog-index-post > .wrapper > .timestamp,
+#blog .blog-index > .container > .blog-index-post > .wrapper > .content
+{
+    position: absolute;
+    top: 0;
+
+    height: 100%;
+}
+#blog .blog-index > .container > .blog-index-post > .wrapper > .timestamp
+{
+    font-family: Stiff-Staff-Heavy, 'Helvetica Neue', Helvetica, Arial, sans-serif;
+
+    left: 0;
+
+    width: 117px;
+    padding: 9px;
+
+    text-align: right;
+}
+#blog .blog-index > .container > .blog-index-post > .wrapper > .timestamp > .content
+{
+    display: none;
+}
+#blog .blog-index > .container > .blog-index-post > .wrapper > .timestamp > .day
+{
+    font-size: 54px;
+    font-weight: bold;
+    line-height: 1;
+}
+#blog .blog-index > .container > .blog-index-post > .wrapper > .timestamp .month-year > .month
+{
+    font-size: 22.5px;
+    font-weight: bold;
+}
+#blog .blog-index > .container > .blog-index-post > .wrapper > .content
+{
+    left: 117px;
+
+    padding: 9px;
+}
+#blog .blog-index > .container > .blog-index-post > .wrapper > .content > .title,
+#blog .blog-index > .container > .blog-index-post > .wrapper > .content > .snippet
+{
+    overflow: hidden;
+
+    text-align: left;
+}
+#blog .blog-index > .container > .blog-index-post > .wrapper > .content > .title
+{
+    font-family: SVN-Servetica-Medium, 'Helvetica Neue', Helvetica, Arial, sans-serif;
+
+    display: block;
+
+    height: 90px;
+
+    color: #2185d0;
+}
+#blog .blog-index > .container > .blog-index-post > .wrapper > .content > .snippet
+{
+    height: 162px;
+}
+#blog .blog-index > .container > .blog-index-post > .wrapper > .content > .more
+{
+    position: absolute;
+    bottom: 18px;
+    left: 9px;
+
+    display: block;
+
+    width: 144px;
+    padding: 4.5px;
+
+    text-align: center;
+    vertical-align: middle;
+
+    color: #333;
+    border: 2px solid #333;
+}
+#blog .blog-index > .container > .blog-index-post > .wrapper > .content > .more:hover
+{
+    text-decoration: none;
+
+    color: #fff;
+    background-color: #333;
+}
 #blog .blog-index > .container > .title
 {
     font-family: Quicksand-Regular, Arial, sans-serif;
@@ -186,7 +377,7 @@ body
 }
 #blog .blog-index > .container > .title > .post
 {
-    font-size: 45px;
+    font-size: 36px;
     font-weight: bold;
 }
 #blog .blog-index > .container > .title > .blog
