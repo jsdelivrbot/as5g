@@ -431,6 +431,129 @@ body
 
     display: inline-block;
 }
+#blog > .blog-post > .summary
+{
+    margin-bottom: 36px;
+
+    text-align: center;
+}
+#blog > .blog-post > .summary > .title
+{
+    font-family: SVN-Servetica-Medium, 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    font-size: 2rem;
+    font-weight: bold;
+
+    margin-bottom: 1rem;
+}
+#blog > .blog-post > .summary > .author,
+#blog > .blog-post > .summary > .timestamp
+{
+    display: inline-block;
+}
+#blog > .blog-post > .summary > .author
+{
+    font-size: 1.25rem;
+    font-weight: bold;
+
+    color: #f2711c;
+}
+#blog > .blog-post > .summary > .author > i
+{
+    color: #21ba45;
+}
+#blog > .blog-post > .summary > .dateHeader
+{
+    font-family: Quicksand-Regular, Arial, sans-serif;
+    font-size: 1.5rem;
+}
+#blog > .blog-post > .summary > .dateHeader > i
+{
+    color: #db2828;
+}
+#blog > .blog-post > .body
+{
+    text-align: justify;
+}
+#blog > .blog-post > .blog-comments
+{
+    margin: 4rem auto;
+}
+#blog > .blog-post > .blog-comments > .nav-tabs
+{
+    line-height: 1.25;
+
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display:         flex;
+
+    margin: 0;
+    padding: 0;
+
+    border: none;
+}
+#blog > .blog-post > .blog-comments > .nav-tabs > li
+{
+    width: 50%;
+}
+#blog > .blog-post > .blog-comments > .nav-tabs > li > a
+{
+    margin: 0;
+
+    text-align: center;
+
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+    background-color: #fff;
+}
+#blog > .blog-post > .blog-comments > .nav-tabs > li > .facebook
+{
+    color: #4267b2;
+    border: 2px solid #4267b2;
+}
+#blog > .blog-post > .blog-comments > .nav-tabs > li > .facebook:hover
+{
+    margin: 2px;
+
+    color: #fff;
+    border: none;
+    background-color: #4267b2;
+}
+#blog > .blog-post > .blog-comments > .nav-tabs > li > .blogger
+{
+    color: #ff5722;
+    border: 2px solid #ff5722;
+}
+#blog > .blog-post > .blog-comments > .nav-tabs > li > .blogger:hover
+{
+    margin: 2px;
+
+    color: #fff;
+    border: none;
+    background-color: #ff5722;
+}
+#blog > .blog-post > .blog-comments > .nav-tabs > li.active > .facebook
+{
+    color: #fff;
+    background-color: #4267b2;
+}
+#blog > .blog-post > .blog-comments > .nav-tabs > li.active > .facebook:hover
+{
+    margin: auto;
+
+    border: 2px solid #4267b2;
+}
+#blog > .blog-post > .blog-comments > .nav-tabs > li.active > .blogger
+{
+    color: #fff;
+    background-color: #ff5722;
+}
+#blog > .blog-post > .blog-comments > .nav-tabs > li.active > .blogger:hover
+{
+    margin: auto;
+
+    border: 2px solid #ff5722;
+}
 #blog .blog-nextprev
 {
     display: table;

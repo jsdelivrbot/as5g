@@ -1,0 +1,24 @@
+﻿<b:includable id="blog-post" var="post">
+   <div class="summary">
+      <div class="title">
+         <data:post.title />
+      </div>
+
+      <b:if cond="data:post.author">
+         {{text.postBy}}
+         <span class="author">
+            <i class="glyphicon glyphicon-leaf"></i> <data:post.author />
+         </span>
+      </b:if>
+
+      <b:if cond='data:post.dateHeader'>
+         <span class="date-header">
+            vào <i class="glyphicon glyphicon-calendar"></i> <data:post.dateHeader />
+         </span>
+      </b:if>
+   </div>
+
+   <div class="body">
+      <data:post.body />
+   </div>
+</b:includable>

@@ -1,0 +1,152 @@
+@import '../colors.less';
+@import '../data.less';
+
+> .blog-post
+{
+    > .summary
+    {
+        margin-bottom: @default-font-size * 2;
+
+        text-align: center;
+
+        > .title
+        {
+            font-family: @font-family-2;
+            font-size: @default-font-size * 2;
+            font-weight: bold;
+
+            margin-bottom: @default-font-size *;
+        }
+
+        > .author,
+        > .timestamp
+        {
+            display: inline-block;
+        }
+
+        > .author
+        {
+            font-size: @default-font-size * 1.25;
+            font-weight: bold;
+
+            color: @orange;
+
+            > i
+            {
+                color: @green;
+            }
+        }
+
+        > .date-header
+        {
+            font-family: @font-family-2;
+            font-size: @default-font-size * 1.5;
+
+            > i
+            {
+                color: @red;
+            }
+        }
+    }
+
+    > .body
+    {
+        text-align: justify;
+    }
+
+    > .blog-comments
+    {
+        margin: @default-font-size * 4 auto;
+
+        > .nav-tabs
+        {
+            line-height: @default-line-height;
+
+            display: -webkit-box;
+            display: -webkit-flex;
+            display: -ms-flexbox;
+            display:         flex;
+
+            margin: 0;
+            padding: 0;
+
+            border: none;
+
+            > li
+            {
+                width: 50%;
+
+                > a
+                {
+                    margin: 0;
+
+                    text-align: center;
+
+                    border-top-left-radius: 0;
+                    border-top-right-radius: 0;
+                    background-color: @white;
+                }
+
+
+                > .facebook
+                {
+                    color: #4267b2;
+                    border: 2px solid #4267b2;
+
+                    &:hover
+                    {
+                        margin: 2px;
+
+                        color: @white;
+                        border: none;
+                        background-color: #4267b2;
+                    }
+                }
+
+                > .blogger
+                {
+                    color: #ff5722;
+                    border: 2px solid #ff5722;
+
+                    &:hover
+                    {
+                        margin: 2px;
+
+                        color: @white;
+                        border: none;
+                        background-color: #ff5722;
+                    }
+                }
+
+                &.active
+                {
+                    > .facebook
+                    {
+                        color: @white;
+                        background-color: #4267b2;
+
+                        &:hover
+                        {
+                            margin: auto;
+
+                            border: 2px solid #4267b2;
+                        }
+                    }
+
+                    > .blogger
+                    {
+                        color: @white;
+                        background-color: #ff5722;
+
+                        &:hover
+                        {
+                            margin: auto;
+
+                            border: 2px solid #ff5722;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

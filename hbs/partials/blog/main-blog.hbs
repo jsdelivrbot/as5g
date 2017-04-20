@@ -30,16 +30,20 @@
 
             <b:else />
             <div class="blog-post">
-               <!--<b:loop values="data:posts" var="post">
+               <b:loop values="data:posts" var="post">
                   <b:include name="blog-post" data="data:post" />
 
                   <b:include name="blog-comments" data="data:post" />
-               </b:loop>-->
+               </b:loop>
             </div>
          </b:if>
       </b:includable>
 
       {{> blog-index-post}}
+
+      {{> blog-post}}
+
+      {{> blog-comments}}
 
       {{> blog-nextprev}}
    </b:widget>
