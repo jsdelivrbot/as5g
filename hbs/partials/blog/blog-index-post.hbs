@@ -1,16 +1,5 @@
 ﻿<b:includable id="blog-index-post" var="post">
    <div class="blog-index-post">
-      <b:if cond="data:post.thumbnailUrl">
-         <div class="thumbnail"
-              expr:thumbnailUrl="data:post.thumbnailUrl"
-              expr:style='"background-image: url(" + data:post.thumbnailUrl + ");"'>
-         </div>
-         <b:else />
-         <div class="thumbnail no-image"
-              style="background-image: url({{url.file}}/img/thumbnail/empty/default.svg)">
-         </div>
-      </b:if>
-
       <div class="wrapper">
          <div class="timestamp">
             <div class="content">
@@ -35,5 +24,16 @@
             <a class="more" expr:href="data:post.url">{{text.blogPostMore}}</a>
          </div>
       </div>
+
+      <b:if cond="data:post.thumbnailUrl">
+         <div class="thumbnail"
+              expr:thumbnailUrl="data:post.thumbnailUrl"
+              expr:style='"background-image: url(" + data:post.thumbnailUrl + ");"'>
+         </div>
+         <b:else />
+         <div class="thumbnail no-image"
+              style="background-image: url({{url.file}}/img/thumbnail/empty/default.svg)">
+         </div>
+      </b:if>
    </div>
 </b:includable>
