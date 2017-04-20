@@ -1,6 +1,6 @@
 ﻿<b:includable id="blog-post" var="post">
    <div class="summary">
-      <div class="title">
+      <div class="title container">
          <data:post.title />
       </div>
 
@@ -12,8 +12,9 @@
       </b:if>
 
       <b:if cond='data:post.dateHeader'>
+         vào 
          <span class="date-header">
-            vào <i class="glyphicon glyphicon-calendar"></i> <data:post.dateHeader />
+            <i class="glyphicon glyphicon-calendar"></i> <data:post.dateHeader />
          </span>
       </b:if>
    </div>

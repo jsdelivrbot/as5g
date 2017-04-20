@@ -433,6 +433,8 @@ body
 }
 #blog .blog-post > .summary
 {
+    font-size: 27px;
+
     margin-bottom: 36px;
 
     text-align: center;
