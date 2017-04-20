@@ -431,54 +431,54 @@ body
 
     display: inline-block;
 }
-#blog > .blog-post > .summary
+#blog .blog-post > .summary
 {
     margin-bottom: 36px;
 
     text-align: center;
 }
-#blog > .blog-post > .summary > .title
+#blog .blog-post > .summary > .title
 {
     font-family: SVN-Servetica-Medium, 'Helvetica Neue', Helvetica, Arial, sans-serif;
-    font-size: 2rem;
+    font-size: 36px;
     font-weight: bold;
 
-    margin-bottom: 1rem;
+    margin-bottom: 18px;
 }
-#blog > .blog-post > .summary > .author,
-#blog > .blog-post > .summary > .timestamp
+#blog .blog-post > .summary > .author,
+#blog .blog-post > .summary > .timestamp
 {
     display: inline-block;
 }
-#blog > .blog-post > .summary > .author
+#blog .blog-post > .summary > .author
 {
-    font-size: 1.25rem;
+    font-size: 22.5px;
     font-weight: bold;
 
     color: #f2711c;
 }
-#blog > .blog-post > .summary > .author > i
+#blog .blog-post > .summary > .author > i
 {
     color: #21ba45;
 }
-#blog > .blog-post > .summary > .dateHeader
+#blog .blog-post > .summary > .date-header
 {
-    font-family: Quicksand-Regular, Arial, sans-serif;
-    font-size: 1.5rem;
+    font-family: SVN-Servetica-Medium, 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    font-size: 27px;
 }
-#blog > .blog-post > .summary > .dateHeader > i
+#blog .blog-post > .summary > .date-header > i
 {
     color: #db2828;
 }
-#blog > .blog-post > .body
+#blog .blog-post > .body
 {
     text-align: justify;
 }
-#blog > .blog-post > .blog-comments
+#blog .blog-post > .blog-comments
 {
-    margin: 4rem auto;
+    margin: 72px auto;
 }
-#blog > .blog-post > .blog-comments > .nav-tabs
+#blog .blog-post > .blog-comments > .nav-tabs
 {
     line-height: 1.25;
 
@@ -492,11 +492,11 @@ body
 
     border: none;
 }
-#blog > .blog-post > .blog-comments > .nav-tabs > li
+#blog .blog-post > .blog-comments > .nav-tabs > li
 {
     width: 50%;
 }
-#blog > .blog-post > .blog-comments > .nav-tabs > li > a
+#blog .blog-post > .blog-comments > .nav-tabs > li > a
 {
     margin: 0;
 
@@ -506,12 +506,12 @@ body
     border-top-right-radius: 0;
     background-color: #fff;
 }
-#blog > .blog-post > .blog-comments > .nav-tabs > li > .facebook
+#blog .blog-post > .blog-comments > .nav-tabs > li > .facebook
 {
     color: #4267b2;
     border: 2px solid #4267b2;
 }
-#blog > .blog-post > .blog-comments > .nav-tabs > li > .facebook:hover
+#blog .blog-post > .blog-comments > .nav-tabs > li > .facebook:hover
 {
     margin: 2px;
 
@@ -519,12 +519,12 @@ body
     border: none;
     background-color: #4267b2;
 }
-#blog > .blog-post > .blog-comments > .nav-tabs > li > .blogger
+#blog .blog-post > .blog-comments > .nav-tabs > li > .blogger
 {
     color: #ff5722;
     border: 2px solid #ff5722;
 }
-#blog > .blog-post > .blog-comments > .nav-tabs > li > .blogger:hover
+#blog .blog-post > .blog-comments > .nav-tabs > li > .blogger:hover
 {
     margin: 2px;
 
@@ -532,23 +532,23 @@ body
     border: none;
     background-color: #ff5722;
 }
-#blog > .blog-post > .blog-comments > .nav-tabs > li.active > .facebook
+#blog .blog-post > .blog-comments > .nav-tabs > li.active > .facebook
 {
     color: #fff;
     background-color: #4267b2;
 }
-#blog > .blog-post > .blog-comments > .nav-tabs > li.active > .facebook:hover
+#blog .blog-post > .blog-comments > .nav-tabs > li.active > .facebook:hover
 {
     margin: auto;
 
     border: 2px solid #4267b2;
 }
-#blog > .blog-post > .blog-comments > .nav-tabs > li.active > .blogger
+#blog .blog-post > .blog-comments > .nav-tabs > li.active > .blogger
 {
     color: #fff;
     background-color: #ff5722;
 }
-#blog > .blog-post > .blog-comments > .nav-tabs > li.active > .blogger:hover
+#blog .blog-post > .blog-comments > .nav-tabs > li.active > .blogger:hover
 {
     margin: auto;
 
