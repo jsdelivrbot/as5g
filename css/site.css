@@ -556,10 +556,6 @@ body
 
     border: 2px solid #ff5722;
 }
-#blog #comments
-{
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif !important;
-}
 #blog .blog-nextprev
 {
     display: table;

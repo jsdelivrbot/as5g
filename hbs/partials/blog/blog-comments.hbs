@@ -2,25 +2,26 @@
    <b:if cond="data:post.allowComments">
       <div class="blog-comments">
          <ul class="nav nav-tabs">
-            <li>
-               <a class="facebook" data-toggle="tab" href="#comments-1">
-                  Facebook
+            <li class="active">
+               <a class="blogger" data-toggle="tab" href="#comments-1">
+                  Blogger
                </a>
             </li>
-            <li class="active">
-               <a class="blogger" data-toggle="tab" href="#comments-2">
-                  Blogger
+
+            <li>
+               <a class="facebook" data-toggle="tab" href="#comments-2">
+                  Facebook
                </a>
             </li>
          </ul>
 
          <div class="tab-content">
             <div id="comments-1" class="tab-pane fade in active">
-               <div class="fb-comments" expr:data-href="data:post.url" data-width="100%" data-numposts="25" data-order-by="reverse_time"></div>
+               <b:include name="comment_picker" data="post" />
             </div>
 
             <div id="comments-2" class="tab-pane fade">
-               <b:include name="comment_picker" data="post" />
+               <div class="fb-comments" expr:data-href="data:post.url" data-width="100%" data-numposts="25" data-order-by="reverse_time"></div>
             </div>
          </div>
       </div>
