@@ -8,8 +8,8 @@
     font-weight: normal;
     font-style: normal;
 
-    src: url('https://rawgit.com/k7ae95/as5g/d001/fonts/SVN-Servetica-Medium.eot');
-    src: local('SVN-Servetica-Medium'), /*local*/ url('https://rawgit.com/k7ae95/as5g/d001/fonts/SVN-Servetica-Medium.eot?#iefix') format('embedded-opentype'), /*embedded-opentype*/ url('https://rawgit.com/k7ae95/as5g/d001/fonts/SVN-Servetica-Medium.woff2') format('woff2'), /*woff2*/ url('https://rawgit.com/k7ae95/as5g/d001/fonts/SVN-Servetica-Medium.woff') format('woff'), /*woff*/ url('https://rawgit.com/k7ae95/as5g/d001/fonts/SVN-Servetica-Medium.ttf') format('truetype'), /*truetype*/ url('https://rawgit.com/k7ae95/as5g/d001/fonts/SVN-Servetica-Medium.svg#SVN-Servetica-Medium') format('svg');
+    src: url('https://cdn.rawgit.com/k7ae95/as5g/r001/fonts/SVN-Servetica-Medium.eot');
+    src: local('SVN-Servetica-Medium'), /*local*/ url('https://cdn.rawgit.com/k7ae95/as5g/r001/fonts/SVN-Servetica-Medium.eot?#iefix') format('embedded-opentype'), /*embedded-opentype*/ url('https://cdn.rawgit.com/k7ae95/as5g/r001/fonts/SVN-Servetica-Medium.woff2') format('woff2'), /*woff2*/ url('https://cdn.rawgit.com/k7ae95/as5g/r001/fonts/SVN-Servetica-Medium.woff') format('woff'), /*woff*/ url('https://cdn.rawgit.com/k7ae95/as5g/r001/fonts/SVN-Servetica-Medium.ttf') format('truetype'), /*truetype*/ url('https://cdn.rawgit.com/k7ae95/as5g/r001/fonts/SVN-Servetica-Medium.svg#SVN-Servetica-Medium') format('svg');
     /*svg*/
 }
 @font-face
@@ -19,7 +19,7 @@
     font-style: normal;
 
     src: url('Quicksand-Regular.eot');
-    src: local('Quicksand-Regular'), /*local*/ url('https://rawgit.com/k7ae95/as5g/d001/fonts/Quicksand-Regular.eot?#iefix') format('embedded-opentype'), /*embedded-opentype*/ url('https://rawgit.com/k7ae95/as5g/d001/fonts/Quicksand-Regular.woff2') format('woff2'), /*woff2*/ url('https://rawgit.com/k7ae95/as5g/d001/fonts/Quicksand-Regular.woff') format('woff'), /*woff*/ url('https://rawgit.com/k7ae95/as5g/d001/fonts/Quicksand-Regular.ttf') format('truetype'), /*truetype*/ url('https://rawgit.com/k7ae95/as5g/d001/fonts/Quicksand-Regular.svg#Quicksand-Regular') format('svg');
+    src: local('Quicksand-Regular'), /*local*/ url('https://cdn.rawgit.com/k7ae95/as5g/r001/fonts/Quicksand-Regular.eot?#iefix') format('embedded-opentype'), /*embedded-opentype*/ url('https://cdn.rawgit.com/k7ae95/as5g/r001/fonts/Quicksand-Regular.woff2') format('woff2'), /*woff2*/ url('https://cdn.rawgit.com/k7ae95/as5g/r001/fonts/Quicksand-Regular.woff') format('woff'), /*woff*/ url('https://cdn.rawgit.com/k7ae95/as5g/r001/fonts/Quicksand-Regular.ttf') format('truetype'), /*truetype*/ url('https://cdn.rawgit.com/k7ae95/as5g/r001/fonts/Quicksand-Regular.svg#Quicksand-Regular') format('svg');
     /*svg*/
 }
 html,
@@ -136,7 +136,7 @@ body
     height: 516px;
 
     background-color: #21ba45;
-    background-image: url('https://rawgit.com/k7ae95/as5g/d001/img/background/1.jpg');
+    background-image: url('https://cdn.rawgit.com/k7ae95/as5g/r001/img/background/1.jpg');
     background-repeat: no-repeat;
     background-position: center center;
 }
@@ -150,7 +150,7 @@ body
     width: 100%;
     height: 36px;
 }
-#blog-section-1 > .arrow > img
+#blog-section-1 > .arrow > svg
 {
     position: absolute;
     top: 0;
